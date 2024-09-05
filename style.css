@@ -1,5 +1,16 @@
+body{
+    box-sizing: border-box;
+}
 .gridRow{
     display: flex;
 }
+
+.gridColumn {
+    outline: .5px solid black;
+    /*flex:0;*/
+    min-width: 60px;/*960/16*/
+    height: 60px;
+}
+
 
     

@@ -14,7 +14,17 @@ for(i=1;i<=16;i++){
     for (j=1;j<=16;j++){
         let gridColumn = document.createElement("div");
         gridColumn.classList.add("gridColumn");
-        gridColumn.textContent = j;
         gridRow.appendChild(gridColumn);
     }
 }
+
+//add event listener for all columns. if mouse enters change background color
+const boxes = document.querySelectorAll(".gridColumn")
+boxes.forEach((gridColumn)=>{
+    gridColumn.addEventListener("mouseenter",()=>{
+        //change background color
+        gridColumn.style.cssText="background:red;";
+
+    });
+});
+
